@@ -1,0 +1,32 @@
+# Site settings
+title: Repla
+email: contact@repla.app
+description: "Repla blog"
+baseurl: ""
+url: "https://blog.repla.app"
+twitter_username: repla_app
+github_username: repla-app
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  # By default kramdown uses a link that gets converted to an ugly emoji
+  # character on iOS
+  footnote_backlink: "&#8617;&#xfe0e;"
+
+# theme: minima
+remote_theme: repla-app/gyrocycle
+
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+
+feed:
+  path: /feed/atom/index.xml
+
+# Theme
+# show_excerpts: true
+show_contents: true
+
+permalink: /:year/:month/:day/:title/
